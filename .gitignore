@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Swift / Xcode build output
+app/.build/
+app/build/
+*.xcodeproj/xcuserdata/
+.swiftpm/
+
+# Third-party binaries and decompiled vendor code (not redistributable)
+*.xapk
+*.apk
+re/
+
+# Personal media
+IMG_*.jpg
+IMG_*.HEIC
+
+# macOS
+.DS_Store
