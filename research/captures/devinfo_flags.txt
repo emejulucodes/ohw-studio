@@ -1,0 +1,32 @@
+mId                                      00ffffff
+mDataKeys                                ff05ff050205030504050d0505050e0509050b
+mBleName                                 OHW-11
+mBleAddress                              C0:0C:D4:B3:F1:8F
+mPlatform                                JL
+mPrototype                               AM08
+mFirmwareFlag                            WATCH11_HWZFB_OHW
+mIOBufferSize                            1018
+mWatchFaceType                           99
+mClassicAddress                          C0:0C:D4:B3:F1:8F
+mHideDigitalPower                        1
+mShowAntiLostSwitch                      1
+mSleepAlgorithmType                      1
+mSupportDateFormatSet                    1
+mSupportReadDeviceInfo                   1
+mSupportTemperatureUnitSet               1
+mSupportChangeClassicBluetoothState      1
+mSupportAppSport                         1
+mSupportRequestRealtimeWeather           1
+mSupportNewTransportMode                 1
+mSupportJLTransport                      0
+mSupportWorldClock                       1
+mSupportStock                            1
+mSupportNoDisturbSet                     1
+mSupportWeather2                         1
+mSupport2DAcceleration                   1
+mSupportReadPackageStatus                1
+mBleDefaultName                          
+mSupportSOSSet2                          1
+mSupportBatteryUsage                     1
+mSupportWatchface2                       0
+unparsed trailing bytes: 0
