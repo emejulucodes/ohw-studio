@@ -1,0 +1,81 @@
+  <~ raw 01378f309f5a99c8704d0e1680d08b80fb
+auth: device proof MATCHES
+  <~ raw 00d4cacd4fe736f63b9cdbd8ef8faa70db
+  <~ raw 0270617373
+auth: b'\x02pass'
+
+== EXTERNAL_FLASH_MSG
+  ~> op=214 (0xd6) 
+  <~ rsp op=214 (0xd6) fl=00 2B 0201
+   reply status=2 sn=1 data[0]=  ''
+
+== DEVICE_CONFIG_INFO
+  ~> op=217 (0xd9) 
+  <~ rsp op=217 (0xd9) fl=00 2B 0202
+   reply status=2 sn=2 data[0]=  ''
+
+== READ_ERROR_MSG
+  ~> op=41 (0x29) 
+  <~ rsp op=41 (0x29) fl=00 2B 0203
+   reply status=2 sn=3 data[0]=  ''
+
+== CONNECTED_PHONE_BT
+  ~> op=49 (0x31) 
+  <~ rsp op=49 (0x31) fl=00 2B 0204
+   reply status=2 sn=4 data[0]=  ''
+
+== FLASH READ 0+256
+  ~> op=26 (0x1a) 0100000000000100
+  <~ rsp op=26 (0x1a) fl=00 2B 0205
+   reply status=2 sn=5 data[0]=  ''
+
+== FILE_BROWSE root
+  ~> op=12 (0x0c) 00140001000000000000
+  <~ rsp op=12 (0x0c) fl=00 2B 0006
+   reply status=0 sn=6 data[0]=  ''
+
+== SYS_INFO fn 0xff
+  ~> op=7 (0x07) ffffffffff
+  <~ cmd op=13 (0x0d) fl=c0 2B 0101
+  <~ rsp op=7 (0x07) fl=00 61B 0007ff02000016020000000000000000000000000000000000000000000d054d50314d50324d5033544d50020600020900080a00000000000000020f00
+   reply status=0 sn=7 data[59]=ff02000016020000000000000000000000000000000000000000000d054d50314d50324d5033544d50020600020900080a00000000000000020f00  'ÿ\x02\x00\x00\x16\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\r\x05MP1MP2MP3TMP\x02\x06\x00\x02\t\x00\x08\n\x00\x00\x00\x00\x00\x00\x00\x02\x0f\x00'
+
+== SYS_INFO fn 0x00
+  ~> op=7 (0x07) 00ffffffff
+  <~ rsp op=7 (0x07) fl=00 3B 000800
+   reply status=0 sn=8 data[1]=00  '\x00'
+
+== SYS_INFO fn 0x01
+  ~> op=7 (0x07) 01ffffffff
+  <~ rsp op=7 (0x07) fl=00 3B 000901
+   reply status=0 sn=9 data[1]=01  '\x01'
+
+== SYS_INFO fn 0x02
+  ~> op=7 (0x07) 02ffffffff
+  <~ rsp op=7 (0x07) fl=00 76B 000a020800e407050f13372802010002020002030002040133050a000be68f90e7a4bae99fb33000010231000202320003023300040234000502350006023600070237000802380009023900
+   reply status=0 sn=10 data[74]=020800e407050f13372802010002020002030002040133050a000be68f90e7a4bae99fb33000010231000202320003023300040234000502350006023600070237000802380009023900  '\x02\x08\x00ä\x07\x05\x0f\x137(\x02\x01\x00\x02\x02\x00\x02\x03\x00\x02\x04\x013\x05\n\x00\x0bæ\x8f\x90ç¤ºé\x9f³0\x00\x01\x021\x00\x02\x022\x00\x03\x023\x00\x04\x024\x00\x05\x025\x00\x06\x026\x00\x07\x027\x00\x08\x028\x00\t\x029\x00'
+
+== SYS_INFO fn 0x03
+  ~> op=7 (0x07) 03ffffffff
+  <~ rsp op=7 (0x07) fl=00 3B 000b03
+   reply status=0 sn=11 data[1]=03  '\x03'
+
+== SYS_INFO fn 0x04
+  ~> op=7 (0x07) 04ffffffff
+  <~ rsp op=7 (0x07) fl=00 3B 000c04
+   reply status=0 sn=12 data[1]=04  '\x04'
+
+== SYS_INFO fn 0x05
+  ~> op=7 (0x07) 05ffffffff
+  <~ rsp op=7 (0x07) fl=00 3B 000d05
+   reply status=0 sn=13 data[1]=05  '\x05'
+
+== SYS_INFO fn 0x06
+  ~> op=7 (0x07) 06ffffffff
+  <~ rsp op=7 (0x07) fl=00 3B 000e06
+   reply status=0 sn=14 data[1]=06  '\x06'
+
+== SYS_INFO fn 0x16
+  ~> op=7 (0x07) 16ffffffff
+  <~ rsp op=7 (0x07) fl=00 3B 000f16
+   reply status=0 sn=15 data[1]=16  '\x16'
