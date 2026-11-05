@@ -8,6 +8,7 @@ Custom watch faces, a wrist voice assistant, workouts, contacts, hidden features
 </p>
 
 <p align="center">
+<a href="https://github.com/emejulucodes/ohw-studio/actions/workflows/build.yml"><img alt="Build" src="https://github.com/emejulucodes/ohw-studio/actions/workflows/build.yml/badge.svg"></a>
 <img alt="macOS 14+" src="https://img.shields.io/badge/macOS-14%2B-black">
 <img alt="Swift 5.9" src="https://img.shields.io/badge/Swift-5.9-orange">
 <img alt="SwiftUI" src="https://img.shields.io/badge/UI-SwiftUI-blue">
