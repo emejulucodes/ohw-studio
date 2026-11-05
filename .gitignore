@@ -20,3 +20,4 @@ IMG_*.HEIC
 
 # macOS
 .DS_Store
+dist/

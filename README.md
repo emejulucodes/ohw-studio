@@ -61,7 +61,7 @@ The OHW-11 is an inexpensive JieLi-based smartwatch that normally only talks to 
 
 ## Install
 
-Download **OHW Studio.zip** from the [latest release](../../releases/latest), unzip it and move **OHW Studio.app** to Applications.
+Download **OHW-Studio-1.0.0-macOS.zip** from the [latest release](../../releases/latest), unzip it and move **OHW Studio.app** to Applications.
 
 The build is ad-hoc signed, not notarised, so on first launch **right-click › Open** (or run `xattr -dr com.apple.quarantine "/Applications/OHW Studio.app"`).
 
