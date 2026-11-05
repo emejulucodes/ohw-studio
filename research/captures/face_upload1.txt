@@ -1,0 +1,6 @@
+  -> key=0x0301 flag=0x20 ab010007c2f0030120284667c2
+  <- [hdr 0x11] key=0x0301 flag=0x20 ok (1B) 00
+handshake: OK
+uploading 124912 bytes in 123 packets
+  1018/124912 bytes (0%) status=1 err=4
+watch rejected the face: status=1 error=4
