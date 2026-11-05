@@ -1,0 +1,56 @@
+B9D6DB46-0594-E8C8-8D9B-DE430069FDCA rssi=-50 name='OHW-11'  <<<
+   services: []
+   mfr: {'0x5d6': '0200810052c00cd4b3f18f804344c00cd4b3f18f00000000000000'}
+   svcdata: {}
+7797F80A-85BA-9FC5-95BF-E67FFB198D0D rssi=-52 name=''
+   services: []
+   mfr: {'0x4c': '1219008cc37865304051d3a995c30a7c1a825f4e6c1af0a05b0000'}
+   svcdata: {}
+EFCDCB30-57D8-A1DC-A046-1FCF5F082D0D rssi=-54 name='Emmanuel’s iPad'
+   services: []
+   mfr: {'0x4c': '10020300'}
+   svcdata: {}
+14738094-2687-BCEB-EB99-52F84AA69E0E rssi=-75 name=''
+   services: []
+   mfr: {}
+   svcdata: {'0000feaa-0000-1000-8000-00805f9b34fb': '404f77bd94627aa319fa290691c7eb25f92a043ae9'}
+FBEE9F5A-F6B2-CC24-992D-289DB6067F97 rssi=-78 name=''
+   services: []
+   mfr: {}
+   svcdata: {'0000fef3-0000-1000-8000-00805f9b34fb': '4a17234c41475211328d537df74ec564e8fe8a8957275ad70df739'}
+91F28344-E072-75BB-B9F0-5E47997B0A0B rssi=-80 name='TyOS'
+   services: ['0000fd50-0000-1000-8000-00805f9b34fb']
+   mfr: {'0x7d0': '00000100c016fb3dcedcb09439e6fe53685f75ff'}
+   svcdata: {'0000fd50-0000-1000-8000-00805f9b34fb': '490c0008e577dcf112afc2c3'}
+B41068B5-D49D-9F3E-7FBC-0920176D8EFE rssi=-86 name=''
+   services: []
+   mfr: {'0x4c': '1006391d818fee38'}
+   svcdata: {}
+7D02763E-B509-AC55-3ACD-768F455D8B86 rssi=-91 name=''
+   services: []
+   mfr: {'0x4c': '1005391841d1d80100000000000000000000000080000000'}
+   svcdata: {}
+CE3EF2F0-5778-9D53-333E-CAC8427A0B94 rssi=-92 name=''
+   services: []
+   mfr: {'0x4c': '160800689b2074652455'}
+   svcdata: {}
+55FE352E-968B-8D9C-7918-EEB00D2522DE rssi=-92 name=''
+   services: []
+   mfr: {'0x4c': '12020003'}
+   svcdata: {}
+5CEB24B3-FD22-75ED-B730-F71810191F6E rssi=-94 name=''
+   services: []
+   mfr: {'0x4c': '10051c1c4a76ec'}
+   svcdata: {}
+CF9C3DDD-1EE3-37BC-F572-F4A91DD2FDD1 rssi=-96 name='G06-BT'
+   services: ['0000184e-0000-1000-8000-00805f9b34fb']
+   mfr: {}
+   svcdata: {'0000184e-0000-1000-8000-00805f9b34fb': '010700070000'}
+64F42CC4-F9BE-46F1-BA81-2DDA3171CACD rssi=-96 name=''
+   services: []
+   mfr: {'0x4c': '121900c6044d4f32d65dc1db1ee8e90cd383142c54ece267b10100'}
+   svcdata: {}
+D1243591-6DBC-66BB-A5DD-D18142BCAC06 rssi=-97 name=''
+   services: []
+   mfr: {'0x4c': '1005361c30ebaa'}
+   svcdata: {}
