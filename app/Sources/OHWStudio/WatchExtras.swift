@@ -115,8 +115,11 @@ struct StockQuote: Identifiable, Codable, Hashable {
         func f(_ v: Double) -> [UInt8] { withUnsafeBytes(of: Float(v).bitPattern.littleEndian) { Array($0) } }
         let dp = price >= 1000 ? 1 : 2
         let code = symbol.replacingOccurrences(of: "-USD", with: "")
-        return [UInt8(index), greenUp ? 0 : 1, UInt8(2 << 4 | dp), 0x02] + fixedString(code, 62) + [0, 0]
-            + f(price) + f(change) + f(percent) + f(0)
+        var out: [UInt8] = [UInt8(index), greenUp ? 0 : 1, UInt8(2 << 4 | dp), 0x02]
+        out += fixedString(code, 62)
+        out += [0, 0]
+        out += f(price); out += f(change); out += f(percent); out += f(0)
+        return out
     }
 }
 

@@ -273,9 +273,15 @@ enum Ink {
         func spans(_ from: Double, _ to: Double) -> [(Double, Double)] {
             if to <= from { return [] }
             if segs == 0 { return [(from, to)] }
-            let step = sweep / Double(segs)
-            return (0..<segs).map { (start + Double($0) * step + gap / 2, start + Double($0 + 1) * step - gap / 2) }
-                .compactMap { s in let a = max(s.0, from), b = min(s.1, to); return b > a ? (a, b) : nil }
+            let step: Double = sweep / Double(segs)
+            var out: [(Double, Double)] = []
+            for i in 0..<segs {
+                let s0: Double = start + Double(i) * step + gap / 2
+                let s1: Double = start + Double(i + 1) * step - gap / 2
+                let a = max(s0, from), b = min(s1, to)
+                if b > a { out.append((a, b)) }
+            }
+            return out
         }
         if l.trackColor.a > 0.001 { for s in spans(start, start + sweep) { arc(s.0, s.1, color: l.trackColor, caps: true) } }
         let grad = l.fill.kind != .solid && l.fill.kind != .none
@@ -836,12 +842,17 @@ final class ComposerEngine {
 
     func hit(_ doc: FaceDoc, _ p: CGPoint, sample: Sample) -> Layer? {
         let tw = twelveHour(doc)
-        let order = doc.layers.filter { $0.visible && $0.kind.isLive }.reversed() + doc.layers.filter { $0.visible && !$0.kind.isLive }.reversed()
+        let live: [Layer] = Array(doc.layers.filter { $0.visible && $0.kind.isLive }.reversed())
+        let art: [Layer] = Array(doc.layers.filter { $0.visible && !$0.kind.isLive }.reversed())
+        let order: [Layer] = live + art
         for l in order {
             let b = bounds(l, sample: sample, twelveHour: tw).insetBy(dx: -4, dy: -4)
             let a = -l.rotation * .pi / 180
             let dx = p.x - l.x, dy = p.y - l.y
-            let q = CGPoint(x: l.x + dx * cos(a) - dy * sin(a), y: l.y + dx * sin(a) + dy * cos(a))
+            let ca: CGFloat = cos(a), sa: CGFloat = sin(a)
+            let qx: CGFloat = l.x + dx * ca - dy * sa
+            let qy: CGFloat = l.y + dx * sa + dy * ca
+            let q = CGPoint(x: qx, y: qy)
             if l.kind == .hands {
                 if hypot(dx, dy) < 40 { return l } else { continue }
             }
