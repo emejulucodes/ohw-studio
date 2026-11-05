@@ -1,0 +1,17 @@
+{
+  "_help": "event -> shell command run on the Mac. Events: music.play music.pause music.toggle music.next music.prev music.volume_up music.volume_down camera.enter camera.capture camera.exit camera.exchange find_phone.start find_phone.stop unknown. Use an empty string to ignore an event.",
+  "music.toggle": "osascript tools/media.applescript playpause",
+  "music.play": "osascript tools/media.applescript play",
+  "music.pause": "osascript tools/media.applescript pause",
+  "music.next": "osascript tools/media.applescript next",
+  "music.prev": "osascript tools/media.applescript previous",
+  "music.volume_up": "osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'",
+  "music.volume_down": "osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'",
+  "camera.enter": "osascript -e 'display notification \"Shutter button ready\" with title \"OHW-11 remote\"'",
+  "camera.capture": "screencapture -x \"$HOME/Desktop/watch-shot-$(date +%Y%m%d-%H%M%S).png\" && afplay /System/Library/Sounds/Pop.aiff",
+  "camera.exit": "",
+  "camera.exchange": "",
+  "find_phone.start": "afplay /System/Library/Sounds/Glass.aiff; osascript -e 'display notification \"Your watch is looking for this Mac\" with title \"OHW-11\" sound name \"Glass\"'",
+  "find_phone.stop": "",
+  "unknown": ""
+}

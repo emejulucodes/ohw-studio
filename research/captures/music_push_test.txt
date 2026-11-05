@@ -1,0 +1,19 @@
+  -> reply ab11000390f1030100
+== READ subscriptions
+  -> key=0x0402 flag=0x10 ab0100036d41040210
+  <- [hdr 0x11] key=0x0402 flag=0x10 ok (7B) 00020102020102
+== push entity=0 attr=1 '1,1.0,42'
+  -> key=0x0402 flag=0x00 ab01000d32600402000001312c312e302c3432
+  <- [hdr 0x11] key=0x0402 flag=0x00 ok (0B) 
+== push entity=2 attr=0 'Claude Artist'
+  -> key=0x0402 flag=0x00 ab010012f3450402000200436c6175646520417274697374
+  <- [hdr 0x11] key=0x0402 flag=0x00 ok (0B) 
+== push entity=2 attr=1 'Test Album'
+  -> key=0x0402 flag=0x00 ab01000f963c04020002015465737420416c62756d
+  <- [hdr 0x11] key=0x0402 flag=0x00 ok (0B) 
+== push entity=2 attr=2 'Hello from the Mac'
+  -> key=0x0402 flag=0x00 ab010017fa06040200020248656c6c6f2066726f6d20746865204d6163
+  <- [hdr 0x11] key=0x0402 flag=0x00 ok (0B) 
+== push entity=2 attr=3 '215'
+  -> key=0x0402 flag=0x00 ab010008ff2f0402000203323135
+  <- [hdr 0x11] key=0x0402 flag=0x00 ok (0B) 

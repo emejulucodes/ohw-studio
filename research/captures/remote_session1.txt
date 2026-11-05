@@ -1,0 +1,246 @@
+connected (handshake ok) - press buttons on the watch; Ctrl-C to quit
+[13:00:00] watch -> key=0x0404 flag=0x10 data=  (unmapped)
+[13:00:03] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:05] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:06] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:07] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:07] watch -> key=0x0402 flag=0x00 data=03  music.next
+  -> osascript tools/media.applescript next
+[13:00:07] watch -> key=0x0402 flag=0x00 data=03  music.next
+  -> osascript tools/media.applescript next
+[13:00:08] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:08] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:08] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:08] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:08] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:09] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:09] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:23] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:23] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:24] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:25] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:26] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:29] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:30] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:30] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:30] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:31] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:31] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:31] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:31] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:31] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:32] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:34] watch -> key=0x0402 flag=0x00 data=03  music.next
+  -> osascript tools/media.applescript next
+[13:00:35] watch -> key=0x0402 flag=0x00 data=03  music.next
+  -> osascript tools/media.applescript next
+[13:00:35] watch -> key=0x0402 flag=0x00 data=03  music.next
+[13:00:35] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:00:35] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:00:43] watch -> key=0x0601 flag=0x00 data=01  camera.enter
+  -> osascript -e 'display notification "Shutter button ready" with title "OHW-11 remote"'
+[13:00:44] watch -> key=0x0601 flag=0x00 data=02  camera.capture
+  -> screencapture -x "$HOME/Desktop/watch-shot-$(date +%Y%m%d-%H%M%S).png" && afplay /System/Library/Sounds/Pop.aiff
+[13:00:46] watch -> key=0x0601 flag=0x00 data=02  camera.capture
+  -> screencapture -x "$HOME/Desktop/watch-shot-$(date +%Y%m%d-%H%M%S).png" && afplay /System/Library/Sounds/Pop.aiff
+[13:00:47] watch -> key=0x0601 flag=0x00 data=02  camera.capture
+  -> screencapture -x "$HOME/Desktop/watch-shot-$(date +%Y%m%d-%H%M%S).png" && afplay /System/Library/Sounds/Pop.aiff
+[13:00:48] watch -> key=0x0601 flag=0x00 data=02  camera.capture
+[13:00:48] watch -> key=0x0601 flag=0x00 data=02  camera.capture
+  -> screencapture -x "$HOME/Desktop/watch-shot-$(date +%Y%m%d-%H%M%S).png" && afplay /System/Library/Sounds/Pop.aiff
+[13:01:08] watch -> key=0x0601 flag=0x00 data=00  camera.exit
+[13:01:11] watch -> key=0x0213 flag=0x00 data=00  find_phone.stop
+[13:01:42] watch -> key=0x0213 flag=0x00 data=01  find_phone.start
+  -> afplay /System/Library/Sounds/Glass.aiff; osascript -e 'display notification "Your watch is looking for this Mac" with title "OHW-11" sound name "Glass"'
+[13:01:43] watch -> key=0x0213 flag=0x00 data=00  find_phone.stop
+[13:01:51] watch -> key=0x0213 flag=0x00 data=01  find_phone.start
+  -> afplay /System/Library/Sounds/Glass.aiff; osascript -e 'display notification "Your watch is looking for this Mac" with title "OHW-11" sound name "Glass"'
+[13:01:51] watch -> key=0x0213 flag=0x00 data=00  find_phone.stop
+[13:01:53] watch -> key=0x0213 flag=0x00 data=01  find_phone.start
+  -> afplay /System/Library/Sounds/Glass.aiff; osascript -e 'display notification "Your watch is looking for this Mac" with title "OHW-11" sound name "Glass"'
+[13:01:55] watch -> key=0x0213 flag=0x00 data=00  find_phone.stop
+[13:02:04] watch -> key=0x0213 flag=0x00 data=01  find_phone.start
+  -> afplay /System/Library/Sounds/Glass.aiff; osascript -e 'display notification "Your watch is looking for this Mac" with title "OHW-11" sound name "Glass"'
+[13:02:04] watch -> key=0x0213 flag=0x00 data=00  find_phone.stop
+[13:02:09] watch -> key=0x0213 flag=0x00 data=01  find_phone.start
+  -> afplay /System/Library/Sounds/Glass.aiff; osascript -e 'display notification "Your watch is looking for this Mac" with title "OHW-11" sound name "Glass"'
+[13:02:12] watch -> key=0x0404 flag=0x10 data=  (unmapped)
+[13:02:13] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:15] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:16] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:21] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:22] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:23] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:24] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:24] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:27] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:27] watch -> key=0x0402 flag=0x00 data=03  music.next
+  -> osascript tools/media.applescript next
+[13:02:28] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:28] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:02:35] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:36] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:02:36] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:02:40] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:02:41] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:03:00] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:03:01] watch -> key=0x0402 flag=0x00 data=04  music.prev
+  -> osascript tools/media.applescript previous
+[13:03:07] watch -> key=0x0601 flag=0x00 data=01  camera.enter
+  -> osascript -e 'display notification "Shutter button ready" with title "OHW-11 remote"'
+[13:03:08] watch -> key=0x0601 flag=0x00 data=02  camera.capture
+  -> screencapture -x "$HOME/Desktop/watch-shot-$(date +%Y%m%d-%H%M%S).png" && afplay /System/Library/Sounds/Pop.aiff
+[13:03:09] watch -> key=0x0601 flag=0x00 data=00  camera.exit
+[13:04:08] watch -> key=0x0404 flag=0x10 data=  (unmapped)
+[13:04:10] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:04:10] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:04:10] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:04:10] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:04:11] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+[13:04:17] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:04:17] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:387:397: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+[13:04:31] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:04:32] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+[13:04:54] watch -> key=0x0404 flag=0x10 data=  (unmapped)
+tools/media.applescript:290:299: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+tools/media.applescript:427:441: execution error: Spotify got an error: AppleEvent timed out. (-1712)
+[13:05:39] watch -> key=0x0404 flag=0x10 data=  (unmapped)
+[13:05:40] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:05:41] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:05:41] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:05:41] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+[13:05:48] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:05:50] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:05:50] watch -> key=0x0402 flag=0x00 data=03  music.next
+  -> osascript tools/media.applescript next
+[13:05:51] watch -> key=0x0402 flag=0x00 data=03  music.next
+  -> osascript tools/media.applescript next
+[13:05:56] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:05:57] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:20] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:06:20] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:20] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:21] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:21] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:06:21] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:06:21] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:21] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:06:22] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:06:22] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:06:22] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:06:23] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:06:23] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:06:23] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:23] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:23] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:06:23] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:23] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:24] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:06:24] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:06:24] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:06:24] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:24] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:24] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:24] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:24] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:06:24] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:06:24] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:06:25] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:25] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:25] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:06:25] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:25] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:06:25] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:06:25] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:06:25] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:06:26] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:06:26] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+watch disconnected
+reconnecting in 5 s ...
+session error: 
+reconnecting in 5 s ...
+watch not found - is iPhone Bluetooth off and the watch nearby?
+reconnecting in 5 s ...
+watch not found - is iPhone Bluetooth off and the watch nearby?
+reconnecting in 5 s ...
+connected (handshake ok) - press buttons on the watch; Ctrl-C to quit
+[13:12:33] watch -> key=0x0404 flag=0x10 data=  (unmapped)
+[13:12:35] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:12:36] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:12:38] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:12:39] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:13:21] watch -> key=0x0404 flag=0x10 data=  (unmapped)
+[13:14:42] watch -> key=0x0404 flag=0x10 data=  (unmapped)

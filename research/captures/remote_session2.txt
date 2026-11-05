@@ -1,0 +1,56 @@
+connected (handshake ok) - press buttons on the watch; Ctrl-C to quit
+  now playing -> watch: I Am Ready - Evado
+  now playing -> watch: Anya Na Ene Uwa - Umu Obiligbo
+  now playing -> watch: Treacherous Cadet - TUFF KING
+[13:17:34] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:17:36] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:17:43] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:17:43] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:17:44] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:17:45] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:17:49] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:17:50] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:17:51] watch -> key=0x0402 flag=0x00 data=02  music.toggle
+  -> osascript tools/media.applescript playpause
+[13:18:00] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:18:00] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:18:01] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:18:01] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:18:01] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:18:01] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:18:01] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:18:01] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:18:01] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:18:01] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:18:01] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:18:02] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:18:02] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:18:02] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:18:02] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:18:02] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:18:02] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:18:02] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:18:03] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) + 6)'
+[13:18:03] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:18:03] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:18:03] watch -> key=0x0402 flag=0x00 data=05  music.volume_up
+[13:18:03] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+  -> osascript -e 'set volume output volume ((output volume of (get volume settings)) - 6)'
+[13:18:04] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:18:04] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
+[13:18:04] watch -> key=0x0402 flag=0x00 data=06  music.volume_down
