@@ -114,6 +114,8 @@ Headless renders: `--render-faces <dir>` and `--render-composer <dir>` write fac
 
 Full details, byte layouts and verification notes: **[docs/FINDINGS.md](docs/FINDINGS.md)**.
 
+Want to do the same for another watch? **[docs/SMARTWATCH_PROMPT.md](docs/SMARTWATCH_PROMPT.md)** turns this project's method into a reusable prompt for an AI coding agent.
+
 ## Repository layout
 
 ```
