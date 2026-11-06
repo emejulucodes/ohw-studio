@@ -10,6 +10,7 @@ Custom watch faces, a wrist voice assistant, workouts, contacts, hidden features
 <p align="center">
 <a href="https://github.com/emejulucodes/ohw-studio/actions/workflows/build.yml"><img alt="Build" src="https://github.com/emejulucodes/ohw-studio/actions/workflows/build.yml/badge.svg"></a>
 <img alt="macOS 14+" src="https://img.shields.io/badge/macOS-14%2B-black">
+<a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-green"></a>
 <img alt="Swift 5.9" src="https://img.shields.io/badge/Swift-5.9-orange">
 <img alt="SwiftUI" src="https://img.shields.io/badge/UI-SwiftUI-blue">
 <img alt="Bluetooth LE" src="https://img.shields.io/badge/Bluetooth-LE%20%2B%20Classic-informational">
@@ -26,7 +27,16 @@ The OHW-11 is an inexpensive JieLi-based smartwatch that normally only talks to 
 3. **Ships OHW Studio**, a SwiftUI + CoreBluetooth Mac app that does what CO FIT does, plus plenty it doesn't.
 4. **Includes Python research tools** ([`tools/`](tools)) used to probe, sweep and test the watch.
 
-<p align="center"><img src="docs/images/composer_templates.png" width="760" alt="Face Composer templates rendered by OHW Studio"></p>
+<p align="center"><img src="docs/images/today.png" width="860" alt="OHW Studio — Today"></p>
+
+## Screenshots
+
+| | |
+|---|---|
+| <img src="docs/images/composer.png" alt="Face Composer"> **Face Composer** — layer editor with live widgets | <img src="docs/images/composer-templates.png" alt="Face templates"> **Templates** — start from a design or your own faces |
+| <img src="docs/images/assistant.png" alt="Assistant"> **Assistant** — talk to your wrist | <img src="docs/images/workout.png" alt="Workout"> **Workout** — start the watch's sport screen from the Mac |
+| <img src="docs/images/wellness.png" alt="Wellness"> **Wellness** — reminders and monitoring schedules | <img src="docs/images/developer-capabilities.png" alt="Capabilities"> **Developer › Capabilities** — every feature flag the watch reports |
+| <img src="docs/images/developer-jieli.png" alt="JieLi chip"> **Developer › JieLi chip** — authenticated chip channel | <img src="docs/images/composer_templates.png" alt="Rendered faces"> **Rendered faces** — what the encoder sends to the watch |
 
 ## Features
 
@@ -146,6 +156,10 @@ All tools run from a terminal that has Bluetooth permission (Terminal.app or an 
 Independent interoperability research on hardware I own. Not affiliated with CO FIT, SMA, Shenzhen Coding IOT or JieLi.
 No vendor code or binaries are included: the decompiled app and its native libraries stay out of the repository.
 Developer features can rename, power off or factory-test the watch, so use them at your own risk.
+
+## License
+
+[MIT](LICENSE) © 2026 Emmanuel Emejulu. The bundled protocol reference in `reference/sma-protocol/` keeps its own MIT license.
 
 ## Author
 
